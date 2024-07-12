@@ -1,0 +1,138 @@
+[
+    {
+        "title": "Melting",
+        "artist": "Kali Uchis",
+        "poster": "melting.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": ""
+
+    },
+    {
+        "title": "Co2",
+        "artist": "Prateek Kuhad",
+        "poster": "Co2.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "02:44"
+
+    },
+    {
+        "title": "I Wanna Be Yours",
+        "artist": "Arctic Monkeys",
+        "poster": "yours.png",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:04"
+
+    },
+    {
+        "title": "Pano",
+        "artist": "Zack Tabudlo",
+        "poster": "pano.jpg",
+        "playsvg":"svg/play2.svg", 
+        "pausevg": "svg/pause.svg",
+        "endtime": "04:13"
+
+    },
+    {
+        "title": "Glimpse of Us",
+        "artist": "joji",
+        "poster": "glimpse.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:54"
+
+    },
+    {
+        "title": "Shinunoga E-wa",
+        "artist": "Fuji Kaze",
+        "poster": "fuji.jpg",
+        "playsvg": "svg/play2.svg", 
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:06"
+
+    },
+    {
+        "title": "Heather",
+        "artist": "Conan Gray",
+        "poster": "heather.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:18"
+
+    },
+    {
+        "title": "Teenage Dream",
+        "artist": "Katy Perry",
+        "poster": "dream.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "02:58"
+        
+    },
+    {
+        "title": "Kasari",
+        "artist": "yabesh thapa",
+        "poster": "kasari.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "04:12"
+
+    },
+    {
+        "title": "Dandelions",
+        "artist": "Ruth B",
+        "poster": "ruth.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": ""
+
+    },
+    {
+        "title": "choo lo",
+        "artist": "The Local Train",
+        "poster": "train.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:54"
+
+    },
+    {
+        "title": "G.O.A.T",
+        "artist": "Diljit Dosanjh",
+        "poster": "goat.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "03:43"
+
+    },
+    {
+        "title": "Sajni re",
+        "artist": "Arijit Singh",
+        "poster": "sajni.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "02:50"
+
+    },
+    {
+        "title": "Tum Ho",
+        "artist": "Mohit chauhan",
+        "poster": "tumho.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "05:18"
+
+    },
+    {
+        "title": "Death Bed(coffee for your head)",
+        "artist": "powfu",
+        "poster": "powfu.jpg",
+        "playsvg": "svg/play2.svg",
+        "pausevg": "svg/pause.svg",
+        "endtime": "02:54"
+
+    }
+    
+]

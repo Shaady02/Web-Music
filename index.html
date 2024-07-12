@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigglymusic - Web Player</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="Img/music-1728989387.png">
+    <link rel="stylesheet" href="left.css">
+    <link rel="stylesheet" href="right.css">
+    <link rel="stylesheet" href="playbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex">
+        <!--left part -->
+        <div class="left round">
+            <div class="home bg-grey round m1 p1">
+                <div class="logo cursor"><img src="Img/finallogo.png" alt="logo">
+                    <h2>Jigglymusic</h2>
+                </div>
+            </div>
+            <div class="library bg-grey round m1 p1">
+                <div class="heading">
+                    <div class="heading-left flex align-center">
+                        <img class="invert" src="svg/library.svg" alt="library">
+                        <h2>Your library</h2>
+                    </div>
+                    <img onclick="showaddsong()" class="invert cursor" id="i1" src="svg/add.svg" alt="add">
+                </div>
+                <div class="addsong">
+                    <!--add song in library-->
+                    <form id="addSongForm">
+                        <label for="songTitleInput">Title:</label>
+                        <input type="text" id="songTitleInput" name="title" required>
+                        <label for="songArtistInput">Artist:</label>
+                        <input type="text" id="songArtistInput" name="artist" required>
+                        <button class="cursor" type="submit">Add Song</button>
+                        <button class="cursor" type="button" id="cancelButton">Cancel</button>
+                    </form>
+                </div>
+                <div class="song-main flex">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--right part -->
+        <div class="right round">
+            <div class="header bg-grey round flex m1">
+                <!--top part-->
+                <div class="nav flex">
+                    <svg id="back" class="cursor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#fff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg id="forward" class="cursor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                        height="24" color="#000000" fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#fff"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="search">
+                    <img class="invert" src="svg/search.svg" alt="Search"><input type="search" placeholder="Search">
+                </div>
+                <div class="user flex cursor">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                        fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                        <path
+                            d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <div class="main bg-grey round flex m1">
+                <!--Main song library-->
+                <div class="playlist">
+                    <h1>Playlist</h1>
+                    <div class="cardcontainer flex">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--seekbar part-->
+        <div class="playbar flex">
+            <div class="seekbar cursor">
+                <div class="circle cursor"></div>
+            </div>
+            <div class="flex" id="now-playing">
+                <img id="playingposter" src="" alt="">
+                <div id="now-playing-title"></div>
+                <div id="now-playing-artist"></div>
+                <svg class="cursor" id="heartbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                    height="24" color="#1f6158" fill="none">
+                    <path id="my-path"
+                        d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+            </div>
+
+            <div class="songbutton">
+                <img id="previous" class="invert cursor" src="svg/previous.svg" alt="">
+                <img id="play" class="invert cursor" src="svg/play2.svg" alt="">
+                <img id="next" class="invert cursor" src="svg/next.svg" alt="">
+            </div>
+            <div id="songst"></div>
+            <div id="songend"></div>
+
+            <div class="songoptions">
+                <img class="cursor" id="lyrics" src="svg/lyric.svg" alt="">
+                <img class="cursor" id="vol" src="svg/volume.svg" alt="">
+                <input id="volbar" type="range">
+            </div>
+        </div>
+        <!--lyrics-->
+        <div class="lyricsBox">
+            <div class="lyricscontainer flex">
+                <div class="lyricbuttons flex">
+                    <p>Sing along</p>
+                    <img class="cursor" id="close" src="svg/close.svg" alt="">
+                </div>
+                <div class="lyricheading flex"></div>
+                <div class="lyricspart"></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="poster.js"></script>
+    <script src="playlist.js"></script>
+    <script src="lyrics.js"></script>
+    <script src="playsong.js"></script>
+</body>
+
+</html>

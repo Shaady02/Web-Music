@@ -1,0 +1,219 @@
+{
+  "playlist": [
+    {
+      "title": "Melting",
+      "artist": "Kali Uchis",
+      "poster": "melting",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "3:30"
+
+  },
+  {
+      "title": "Co2",
+      "artist": "Prateek Kuhad",
+      "poster": "Co2",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "02:44"
+
+  },
+  {
+      "title": "I Wanna Be Yours",
+      "artist": "Arctic Monkeys",
+      "poster": "I Wanna Be Yours",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "03:04"
+  },
+  {
+      "title": "Pano",
+      "artist": "Zack Tabudlo",
+      "poster": "Pano",
+      "playsvg":"play2.svg", 
+      "pausesvg": "pause.svg",
+      "endtime": "04:13"
+
+  },
+  {
+      "title": "Glimpse of Us",
+      "artist": "joji",
+      "poster": "Glimpse of Us",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "03:54"
+
+  },
+  {
+      "title": "Shinunoga-E-Wa",
+      "artist": "Fuji Kaze",
+      "poster": "Shinunoga-E-Wa",
+      "playsvg": "play2.svg", 
+      "pausesvg": "pause.svg",
+      "endtime": "03:06"
+
+  },
+  {
+    "title": "Dope Shope",
+    "artist": "Yo Yo Honey Singh",
+    "poster": "Dope Shope",
+    "playsvg": "play2.svg", 
+    "pausesvg": "pause.svg",
+    "endtime": "03:31"
+
+},
+  {
+      "title": "Heather",
+      "artist": "Conan Gray",
+      "poster": "Heather",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "03:18"
+
+  },
+  {
+      "title": "Teenage Dream",
+      "artist": "Katy Perry",
+      "poster": "Teenage Dream",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "02:58"
+      
+  },
+  {
+    "title": "Soulmate",
+    "artist": "Arijit Singh , Badshah",
+    "poster": "Soulmate",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "03:33"
+
+},
+  {
+      "title": "Kasari",
+      "artist": "yabesh thapa",
+      "poster": "kasari",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "04:12"
+
+  },
+  {
+      "title": "Dandelions",
+      "artist": "Ruth B",
+      "poster": "Dandelions",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "3:52"
+
+  },
+  {
+      "title": "Joota Japani",
+      "artist": "Kr$na",
+      "poster": "Joota Japani",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "2:34"
+  },
+  {
+    "title": "Hoshiyaar",
+    "artist": "Seedhe Maut",
+    "poster": "Hoshiyaar",
+    "playsvg" : "play2.svg",
+    "pausesvg" : "pause.svg",
+    "endtime": "3:13"
+  },
+  {
+    "title": "choo lo",
+    "artist": "The Local Train",
+    "poster": "choo lo",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "03:54"
+
+},
+{
+  "title": "Saibo",
+  "artist": "Shreya Ghoshal",
+  "poster": "Saibo",
+  "playsvg" : "play2.svg",
+  "pausesvg" : "pause.svg",
+  "endtime": "3:14"
+},
+{
+    "title": "G.O.A.T ",
+    "artist": "Diljit Dosanjh",
+    "poster": "G.O.A.T ",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "03:43"
+
+},
+{
+    "title": "Sajni",
+    "artist": "Arijit Singh",
+    "poster": "sajni",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "02:50"
+
+},
+{
+    "title": "Tum ho",
+    "artist": "Mohit chauhan",
+    "poster": "tum ho",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "05:18"
+
+},
+{
+    "title": "Death Bed",
+    "artist": "powfu",
+    "poster": "Death Bed",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "02:54"
+
+}
+  ],
+  "songlist" : [
+    {
+      "title": "Joota Japani",
+      "artist": "Kr$na",
+      "poster": "Joota Japani",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "2:34"
+  },
+  {
+    "title": "Soulmate",
+    "artist": "Arijit Singh , Badshah",
+    "poster": "Soulmate",
+    "playsvg": "play2.svg",
+    "pausesvg": "pause.svg",
+    "endtime": "03:33"
+
+},
+  
+  {
+      "title": "Sajni",
+      "artist": "Arijit Singh",
+      "poster": "sajni",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "02:50"
+
+  },
+  {
+      "title": "Death Bed",
+      "artist": "powfu",
+      "poster": "Death Bed",
+      "playsvg": "play2.svg",
+      "pausesvg": "pause.svg",
+      "endtime": "02:54"
+
+  }
+  ]
+}
+  

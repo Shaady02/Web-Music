@@ -1,0 +1,113 @@
+.playbar {
+  z-index: 8;
+  position: fixed;
+  bottom: 0px;
+  background-color: rgb(21, 34, 34);
+  width: 100%;
+  padding: 12px 20px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#now-playing-artist {
+  position: absolute;
+  left: 92px;
+  bottom: 17px;
+  font-size: 12px;
+  color: #a7a7a7;
+}
+
+#now-playing-title {
+  padding-left: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#playingposter {
+  width: 60px;
+  padding-top: 10px;
+  object-fit: contain;
+  max-height: 70px;
+}
+
+.seekbar {
+  border-radius: 10px;
+  background-color: rgba(124, 202, 192, 0.74);
+  height: 7px;
+  width: 30%;
+  position: absolute;
+  bottom: 14px;
+  margin: 0 34%;
+}
+
+#heartbtn {
+  height: 25px;
+  margin-left: 55px;
+  margin-top: 2px;
+  display: none;
+}
+
+#heartbtn2 {
+  height: 25px;
+  margin-left: 55px;
+  margin-top: 2px;
+  display: none;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 15px;
+  background-color: rgb(31, 97, 88);
+  position: relative;
+  bottom: 5px;
+  left: 0%;
+  transition: left 0.5s;
+}
+
+#now-playing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.songbutton {
+  position: fixed;
+  right: 47%;
+  top: 94%;
+  transform: translateY(-50%);
+}
+
+.songbutton img {
+  width: 26px;
+}
+
+#songst {
+  position: absolute;
+  bottom: 10px;
+  right: 65.5vw;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+#songend {
+  position: absolute;
+  bottom: 10px;
+  right: 32.4vw;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.songoptions {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.songoptions input {
+  height: 6px;
+  width: 8vw;
+  accent-color: rgb(31, 97, 88);
+}

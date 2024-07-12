@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Lyrics Search</title>
+</head>
+<body>
+  <h1>Song Lyrics Search</h1>
+  <input type="text" id="songName" placeholder="Enter Song Name">
+  <button id="getLyrics">Get Lyrics</button>
+  <br>
+  <div id="lyrics"></div>
+
+  <script>
+    const songLyrics = [ // Array containing song lyrics objects
+      { title: "Bohemian Rhapsody", lyrics: "Is this the real life? Is this just fantasy?" },
+      { title: "Imagine", lyrics: "Imagine there's no heaven, it's easy if you try" },
+      { title: "Co2", lyrics: `Maybe I was wrong and you were right
+      But I don't really wanna have this fight
+      I just wanna feel like I belong
+      And every time my heart swings back to you
+      You are my morning and my truth
+      And all that I can do is sing this song
+      It ain't that long, hm
+      
+      And nothing says "I love you" like your eyes
+      Fill my lips with carbon dioxide
+      I just wanna feel like I deserve you
+      'Cause you deserve me
+      Baby, it's the way that you can see
+      What I miss and what I can never be
+      I just wanna feel like I deserve you
+      'Cause you deserve me
+      
+      Maybe you were wrong and I was right
+      I don't care, won't you stay another night?
+      I just need some time to be myself
+      I couldn't say "I need you" on that night
+      When you left and I lost all track of time
+      I just want you close so I can feel you
+      Can you feel me? Mm
+      
+      And nothing says "I love you" like the words
+      That were never said, but could be heard
+      If only there was peace around us, baby
+      You would hear me
+      And maybe it's the way that lovers do
+      I just want for me what I want for you
+      Only with the sun above us maybe
+      You would see me
+      
+      Mm, mm, mm
+      
+      And even if you leave, I may be fine
+      'Cause my heart, it has its own design
+      And even if you never see it, baby
+      You're all that I need
+      
+      Maybe it's the silence in your eyes
+      Maybe it's the lilac when you're shy
+      Maybe it's the mystery of your love
+      All I need is a sign from the stars above
+      Maybe it's the way that you breathe in me
+      Maybe it's the man that you see in me
+      Maybe it's the fragrance of your hair
+      Yeah, I just wanna kiss you when you're there
+      
+      I just want you all around me, baby
+      Can we make that happen, please?` },
+      { title: "Hallelujah", lyrics: "I heard there was a secret chord, that David played and it pleased the Lord" }
+    ];
+
+    const getLyricsButton = document.getElementById('getLyrics');
+    const songNameInput = document.getElementById('songName');
+    const lyricsDiv = document.getElementById('lyrics');
+
+    getLyricsButton.addEventListener('click', () => {
+      const songName = songNameInput.value.toLowerCase(); // Convert search to lowercase for case-insensitive matching
+
+      // Search for song by title
+      const foundSong = songLyrics.find(song => song.title.toLowerCase() === songName);
+
+      if (foundSong) {
+        lyricsDiv.textContent = foundSong.lyrics;
+      } else {
+        lyricsDiv.textContent = 'Song not found.';
+      }
+    });
+  </script>
+</body>
+</html>

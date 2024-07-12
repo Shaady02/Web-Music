@@ -1,0 +1,182 @@
+
+:root{
+    --a : 0;
+    --b : 30%;
+}
+
+.right{
+    width: 75vw;
+    padding: 4px;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.header > *{
+    padding: 20px;
+}
+.search img{
+    width: 18px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    max-height: 20px;
+    width: 60%;
+    padding: 20px;
+}
+.search input{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 16px;
+    padding-left: 20px;
+    color: #fff;
+}
+
+.main > *{
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.main{
+    height: 77vh;
+    overflow-y: scroll;
+}
+.playlist h1{
+    margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cardcontainer{
+    gap: 76px;
+    flex-wrap: wrap;
+    height: 50vh;
+}
+.card{
+    width: 180px;
+    padding: 10px;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+.card:hover{
+    background-color: #272727;
+    --a:1;
+    --b:46%;
+}
+.card > *{
+    padding-top: 3px;
+}
+
+.card p{
+    font-size: 14px;
+    color: #b3b3b3;
+}
+.posterimg{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    height: 40vh;
+    position: relative;
+}
+.playbtn{
+    position: absolute;
+    top: var(--b);
+    left: 45%;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: var(--a);
+    transition: all 0.5s;
+}
+.playicon{
+    fill: rgba(72, 147, 177, 0.705);
+    width: 30px;
+    height: auto;
+}
+
+.lyricsBox{
+    display: none;
+    position: relative;
+    width: 40vw;
+    background-color: #111111;
+    /* border-radius: 5px; */
+    height: 87.8vh;
+    margin-top: 8px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+.lyricbuttons{
+    justify-content: space-between;
+    padding: 10px;
+    color: rgba(67, 129, 129, 0.925);
+}
+.lyricsonginfo{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 1;
+}
+.lyricscontainer{
+    flex-direction: column;
+}
+.lyricheading img{
+    width: 24vw;
+    height: 360px;
+    /* border-radius: 10px; */
+    margin-bottom: 6px;
+    margin-top: 10px;
+    object-fit: contain;
+}
+.nowplaying p{
+    margin-bottom: 5px;
+}
+.lyricheading{
+    margin: 0 10px;
+}
+.lyricheading h2{
+    font-size: 2.4rem;
+}
+.lyricheading h4{
+    font-size: 1.2rem;
+    color: #b3b3b3;
+}
+.lyricheading p{
+    font-size: 1.8rem;
+}
+.selecttranslate{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+.selecttranslate select{
+    padding: 4px;
+    border-radius: 20px;
+    background-color: #b3b3b3;
+}
+.lyricspart{
+    border-radius: 10px;
+    min-height: 60vh;
+    width: 94%;
+    background-color: #2c2c2c;
+    position: absolute;
+    bottom: -55vh;
+    margin: 10px;
+    padding: 5px;
+    
+}
+.lyricsdiv{
+    height: 10vh;
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+
+
