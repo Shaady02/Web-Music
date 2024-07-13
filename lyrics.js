@@ -1,15 +1,29 @@
+
 function displaylyrics(song) {
 
 
   if (lyricbox.style.display === "block") {
     // Clear the lyric box content
+    lyricbox.innerHTML = "";
     lyrichead.innerHTML = "";
   }
 
-  lyrichead.innerHTML = "";
+  
   // const lyricsdetails = document.querySelector(".lyricsdetails");
   const lyricsonginfo = document.createElement("div");
   lyricsonginfo.classList.add("lyricsonginfo");
+
+  const lyrictop = document.createElement("div");
+  const singalong = document.createElement("p");
+  lyrictop.id = "lyrictop";
+  singalong.textContent = "SingAlong";
+  lyrictop.appendChild(singalong);
+
+  const crossbtn = document.createElement("img");
+  crossbtn.classList.add("cursor");
+  crossbtn.src="svg/close.svg";
+  lyrictop.appendChild(crossbtn);
+  lyricsonginfo.appendChild(lyrictop);
 
   //now playing
   const nowplaying = document.createElement("p");
@@ -60,13 +74,14 @@ function displaylyrics(song) {
   lyricsonginfo.appendChild(translationSelect);
 
 
-
+  const lyricscontainer = document.createElement("div");
+  lyricscontainer.innerHTML = "";
   const songs = poster.find(song => song.title === currentSongTitle); // Find song object by title
 
   if (songs) {
     if (songs) {
       // lyricmain.textContent = "";
-      lyricmain.innerText = songs.lyrics.original; // Update lyrics content
+      lyricscontainer.innerText = songs.lyrics.original; // Update lyrics content
     } else {
       console.error("Lyrics container element not found!");
     }
@@ -75,13 +90,13 @@ function displaylyrics(song) {
   }
 
 
-  lyricmain.classList.add("lyricsdiv");
+  lyricscontainer.classList.add("lyricsdiv");
   // lyricmain.appendChild(lyrics);
 
 
   selectElement.addEventListener("change", () => {
     const selectedLanguage = selectElement.value;
-    lyricmain.innerText = songs.lyrics[selectedLanguage] || "Translation not available."; // Handle missing translations
+    lyricscontainer.innerText = songs.lyrics[selectedLanguage] || "Translation not available."; // Handle missing translations
   });
 
 
@@ -89,8 +104,8 @@ function displaylyrics(song) {
   //close button event
   const closeButton = lyricbox.querySelector("#close");
 
-  if (closeButton) {
-    closeButton.addEventListener("click", () => {
+  if (crossbtn) {
+    crossbtn.addEventListener("click", () => {
       lyricbox.style.display = "none"; // Hide the lyric box
     });
   }
@@ -100,6 +115,7 @@ function displaylyrics(song) {
 
   lyrichead.appendChild(lyricsonginfo);
 
-  lyricbox.appendChild(lyrichead)
+  lyricbox.appendChild(lyrichead);
+  lyricbox.appendChild(lyricscontainer)
   lyricbox.style.display = "block"
 }

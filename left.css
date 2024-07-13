@@ -1,6 +1,6 @@
 .left {
   width: 25vw;
-  padding: 4px;
+  padding: 0px;
 }
 
 .logo {
@@ -58,8 +58,8 @@
   justify-content: space-between;
   gap: 26px;
   cursor: pointer;
-  padding: 8px 0;
-  margin: 12px 0px;
+  padding: 10px 0;
+  margin: 16px 0px;
 }
 
 .song-main .info {
@@ -68,10 +68,10 @@
 
 .song-main #song-poster {
   width: 65px;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
-.playbtnsvg {
+#libraryplay {
   width: 28px;
 }
 
@@ -132,4 +132,72 @@
 #addSongIcon img {
   width: 30px;
   height: 30px;
+}
+
+@media (min-height: 766px) {
+    .library{
+      height: 75vh;
+    }
+}
+
+@media (max-width: 1307px){
+  .logo{
+    font-size: 18px;
+  }
+  .library{
+    height: 79.8vh;
+  }
+  .home .logo img {
+    width: 50px;
+  }
+  .left {
+    width: 23vw;
+  }
+  .song-main #song-poster {
+    width: 45px;
+  }
+  .song-main ul li {
+    gap: 20px;
+    padding: 8px 0;
+    margin: 18px 0px;
+  }
+}
+@media (max-width: 1107px){
+  .home .logo img {
+    width: 50px;
+  }
+  .logo h2 {
+    font-size: 24px;
+  }
+  #libraryplay{
+    display: none;
+  }
+}
+@media (max-width: 1008px){
+  .home .logo img {
+    width: 40px;
+  }
+  .logo h2 {
+    font-size: 20px;
+  }
+  .song-main #song-poster {
+    width: 35px;
+  }
+  .song-main ul li {
+    gap: 14px;
+  }
+  .library{
+    height: 81vh;
+  }
+}
+@media (max-width: 1008px){
+  .home .logo img {
+    width: 30px;
+  }
+  .logo h2 {
+    font-size: 14px;
+  }
+  .library{
+    height: 81.6vh;
+  }
 }

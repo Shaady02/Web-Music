@@ -30,7 +30,7 @@ function createPlaylistCard(play) {
     card.appendChild(playButton);
 
     //event to call playsong
-    card.addEventListener("click", (e) => {
+    card.addEventListener("click", () => {
         playSong(play);
         currentSongTitle = play.title
         console.log(currentSongTitle)
@@ -70,15 +70,15 @@ function createSongListItem(song) {
     listItem.appendChild(infoDiv);
     const playButton = document.createElement("img");
     playButton.classList.add("playbtnsvg");
+    playButton.id = "libraryplay"
     playButton.classList.add("invert");
     playButton.src = "svg/play2.svg";
     playButton.alt = "Play";
-    playButton.style.height = "28px"
     listItem.appendChild(playButton);
 
     //event to call playsong
-    listItem.addEventListener("click", (e) => {
-        if (e.target === playButton)
+    listItem.addEventListener("click", () => {
+        // if (e.target === playButton)
             playSong(song);
         currentSongTitle = song.title
         console.log(currentSongTitle)

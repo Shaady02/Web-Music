@@ -6,7 +6,7 @@
 
 .right{
     width: 75vw;
-    padding: 4px;
+    padding: 0px;
 }
 .header{
     justify-content: space-between;
@@ -109,16 +109,23 @@
     background-color: #111111;
     /* border-radius: 5px; */
     height: 87.8vh;
-    margin-top: 8px;
+    margin-top: 5px;
     border-radius: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
     overflow-wrap: break-word;
 }
-.lyricbuttons{
+#lyrictop{
+    display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    font-size: 26px;
+    height: 40px;
     color: rgba(67, 129, 129, 0.925);
+}
+#lyrictop img{
+    width: 30px;
+    height: 30px;
 }
 .lyricsonginfo{
     display: flex;
@@ -154,7 +161,7 @@
     font-size: 1.8rem;
 }
 .selecttranslate{
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 1.4rem;
 }
 .selecttranslate select{
@@ -162,21 +169,53 @@
     border-radius: 20px;
     background-color: #b3b3b3;
 }
-.lyricspart{
-    border-radius: 10px;
-    min-height: 60vh;
-    width: 94%;
-    background-color: #2c2c2c;
-    position: absolute;
-    bottom: -55vh;
-    margin: 10px;
-    padding: 5px;
-    
-}
+
 .lyricsdiv{
-    height: 10vh;
+    height: 50vh;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #2c2c2c;
     overflow-y: scroll;
     overflow-x: auto;
+}
+
+@media (min-height: 766px) {
+    .main{
+      height: 79vh;
+    }
+    .lyricsBox{
+        height: 89.5vh;
+    }
+}
+@media (max-width: 1510px){
+    .lyricheading img{
+        width: 24vw;
+        height: 300px;
+    }
+}
+@media (max-width: 1307px){
+    .right{
+        width: 78vw;
+    }
+}
+@media (max-width: 849px){
+    .lyricheading img{
+        width: 21vw;
+        height: 200px;
+    }
+    .main, .header{
+        width: 45vw;
+    }
+    .lyricsBox{
+        width: 55vw;
+    }
+    .user{
+        display: none;
+    }
+    .search{
+        margin-right: 20px;
+    }
 }
 
 

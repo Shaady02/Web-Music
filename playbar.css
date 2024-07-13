@@ -111,3 +111,39 @@
   width: 8vw;
   accent-color: rgb(31, 97, 88);
 }
+@media (min-height: 766px) {
+  .songbutton {
+    top: 95%;
+  }
+}
+@media (max-width: 1447px){
+  #songend {
+    right: 31.5vw;
+  }
+  .songbutton {
+    right: 46%;
+  }
+}
+@media (max-width: 1307px){
+  .songbutton {
+    right: 45%;
+  }
+  #songend {
+    right: 31vw;
+  }
+}
+@media (max-width: 1107px){
+  #songend {
+    right: 30vw;
+  }
+  .songbutton {
+    right: 44%;
+  }
+  #heartbtn {
+    margin-left: 45px;
+  }
+  
+  #heartbtn2 {
+    margin-left: 45px;
+  }
+}
