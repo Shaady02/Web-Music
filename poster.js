@@ -729,6 +729,106 @@ poster = [
 
     },
     {
+        title: "Kho gaye hum kahan",
+        artist: "Jasleen R, Prateek K",
+        poster: "Kho gaye hum kahan",
+        playsvg: "play2.svg",
+        pausesvg: "pause.svg",
+        endtime: "04:14",
+        lyrics: {
+            original: `Rooh se behti hui dhun ye ishare de
+Kuch mere raaz tere raaz aawara se
+
+Kho gaye hum kahan
+Rangon sa ye jahan (x2)
+
+Tedhe-medhe raaste hain
+Jaadui imaaratein hain
+Main bhi hoon
+Tu bhi hai yahan
+
+Khoyi soyi sadko pe
+Sitaron ke kandhon pe
+Hum naachte udte hain yahan
+
+Kho gaye hum kahan
+Rangon sa ye jahan (x2)
+
+O oo…
+
+So gayi hain ye saansein sabhi
+Adhoori si hai kahaani meri
+
+Phisal jaayein bhi toh darr na koi
+Ruk jaane ki zaroorat nahi
+
+Kaagaz ke parde hain
+Taale hain darwazon pe
+Paani mein doobe huve
+Khwaab alfazon ke
+
+Kho gaye hum kahan
+Rangon sa ye jahan (x2)
+
+Tedhe-medhe raaste hain
+Jaadui imaratein hain
+Main bhi hoon
+Tu bhi hai yahan
+
+Khoyi-soyi sadko pe
+Sitaron ke kandhon pe
+Hum naachte udte hain yahan
+
+Oo… hmm…`,
+hindi: `[Intro: Jasleen Royal]
+रूह से बहती हुई धून ये इशारे दे
+कुछ मेरे राज़ तेरे राज़ आवारा से
+
+[Chorus: Jasleen Royal]
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+
+[Post-Chorus: Jasleen Royal]
+टेढ़े-मेढे रास्ते हैं
+जादुई इमारतें हैं
+मैं भी हूँ, तू भी है यहाँ
+खोई, सोई सड़कों पे
+सितारों के कंधों पे
+हम नाचते उड़ते हैं यहाँ
+
+[Chorus: Prateek Kuhad]
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+
+[Verse: Prateek Kuhad & Jasleen Royal]
+सो गयी हैं ये साँसे सभी
+अधूरी सी है कहानी मेरी
+फिसल जाए भी तो डर ना कोई
+रुक जाने की ज़रूरत नही
+काग़ज़ के पर्दे हैं
+ताले हैं दरवाज़ो पे
+पानी में डूबे हुवे
+ख्वाब अल्फाज़ों के
+[Chorus: Prateek Kuhad & Jasleen Royal]
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+खो गये हम कहाँ
+रंगों सा ये जहाँ
+
+[Post-Chorus: Prateek Kuhad & Jasleen Royal]
+टेढ़े-मेढे रास्ते हैं
+जादुई इमारतें हैं
+मैं भी हूँ तू भी है यहाँ
+खोई सोई सड़कों पे
+सितारों के कंधों पे
+हम नाचते उड़ते हैं यहाँ`
+        }
+    },
+    {
         title: "Glimpse of Us",
         artist: "joji",
         poster: "Glimpse of Us",
