@@ -243,4 +243,3 @@ function heartbtn(pathElement) {
     isFilled = false;
   }
 }
-

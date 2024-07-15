@@ -5,7 +5,7 @@
 }
 
 .right{
-    width: 75vw;
+    width: 80vw;
     padding: 0px;
 }
 .header{
@@ -45,7 +45,7 @@
     padding-left: 40px;
 }
 .main{
-    height: 77vh;
+    height: 542px;
     overflow-y: scroll;
 }
 .playlist h1{
@@ -108,7 +108,7 @@
     width: 40vw;
     background-color: #111111;
     /* border-radius: 5px; */
-    height: 87.8vh;
+    height: 616px;
     margin-top: 5px;
     border-radius: 10px;
     overflow-y: scroll;
@@ -132,16 +132,17 @@
     flex-direction: column;
     text-align: left;
     z-index: 1;
+    width: 100%;
 }
 .lyricscontainer{
     flex-direction: column;
 }
 .lyricheading img{
-    width: 24vw;
+    width: 360px;
     height: 360px;
     /* border-radius: 10px; */
     margin-bottom: 6px;
-    margin-top: 10px;
+    margin-top: 5px;
     object-fit: contain;
 }
 .nowplaying p{
@@ -182,40 +183,80 @@
 
 @media (min-height: 766px) {
     .main{
-      height: 79vh;
+      height: 603px;
     }
     .lyricsBox{
-        height: 89.5vh;
+        height: 685px;
     }
 }
+@media (min-height: 820px) {
+    .main{
+        height: 650px;
+      }
+      .lyricsBox{
+          height: 735px;
+      }
+  }
 @media (max-width: 1510px){
     .lyricheading img{
-        width: 24vw;
+        width: 300px;
         height: 300px;
     }
 }
-@media (max-width: 1307px){
-    .right{
-        width: 78vw;
+@media (max-width: 1218px){
+    .lyricheading img{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 1018px){
+    .lyricheading img{
+        width: 200px;
+        height: 200px;
     }
 }
 @media (max-width: 849px){
-    .lyricheading img{
-        width: 21vw;
-        height: 200px;
-    }
-    .main, .header{
-        width: 45vw;
-    }
     .lyricsBox{
         width: 55vw;
     }
-    .user{
-        display: none;
-    }
     .search{
-        margin-right: 20px;
+        width: 40%;
+    }
+    
+}
+@media (max-width: 814px) {
+    .lyricsBox{
+        position: absolute;
+        right: 0px;
+        width: 230px;
+    }
+    .lyricheading img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 623px){
+    .main{
+        height: 100vh;
+    }
+    .lyricsBox{
+        position: fixed;
+        right: 0px;
+        bottom: 0;
+        width: 230px;
     }
 }
 
-
+@media (max-width: 469px){
+    .main{
+        height: 220vh;
+    }
+    .right{
+        width: 180vw;
+    }
+    .cardcontainer{
+        gap: 6px;
+        flex-wrap: wrap;
+        height: 30vh;
+    }
+}

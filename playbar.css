@@ -87,7 +87,7 @@
 #songst {
   position: absolute;
   bottom: 10px;
-  right: 65.5vw;
+  right: 65.4%;
   font-weight: 300;
   font-size: 12px;
 }
@@ -95,7 +95,7 @@
 #songend {
   position: absolute;
   bottom: 10px;
-  right: 32.4vw;
+  right: 32%;
   font-weight: 300;
   font-size: 12px;
 }
@@ -117,9 +117,9 @@
   }
 }
 @media (max-width: 1447px){
-  #songend {
-    right: 31.5vw;
-  }
+  /* #songend {
+    right: 31%;
+  } */
   .songbutton {
     right: 46%;
   }
@@ -129,12 +129,12 @@
     right: 45%;
   }
   #songend {
-    right: 31vw;
+    right: 31%;
   }
 }
 @media (max-width: 1107px){
   #songend {
-    right: 30vw;
+    right: 30%;
   }
   .songbutton {
     right: 44%;
@@ -145,5 +145,55 @@
   
   #heartbtn2 {
     margin-left: 45px;
+  }
+}
+@media (max-width: 849px){
+  #songend {
+    right: 29%;
+  }
+  .songbutton{
+    right: 42%;
+  }
+}
+@media (max-width: 733px){
+  #songend {
+    right: 28%;
+  }
+  .songbutton{
+    right: 41%;
+  }
+}
+@media (max-width: 623px){
+  #songend{
+    right: 26%
+  }
+  #songst{
+    right: 64%
+  }
+}
+@media (max-width: 499px){
+  #now-playing-artist {
+    font-size: 8px;
+    left: 73px;
+  }
+  #songend{
+    right: 27%
+  }
+  #now-playing-title {
+    font-size: 12px;
+  }
+  
+  #playingposter {
+    width: 40px;
+  }
+  .songbutton{
+    right: 40%;
+    top: 96%;
+  }
+}
+@media (max-width: 404px){
+  .songbutton{
+    right: 40%;
+    top: 96.7%;
   }
 }
