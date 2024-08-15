@@ -32,7 +32,6 @@ backbtn.addEventListener("click", () => {
 fetch("songs/songs.json")
   .then(response => response.json())
   .then(data => {
-
     // Process songs 
     data.songlist.forEach(song => {
       createSongListItem(song);
